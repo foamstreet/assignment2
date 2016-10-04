@@ -1,0 +1,98 @@
+body {
+  font-family: 'Copse', serif;
+}
+
+label div {
+  font-size: 1.3rem;
+  text-align: center;
+  overflow: hidden;
+}
+
+label div.title p {
+    color: #ff6666;
+}
+
+label img {
+  height: 100px;
+}
+
+.crop {
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 2px solid #000;
+  margin: 10px;
+}
+
+.rotate {
+  transform: rotate(360deg);
+  transition: transform 500ms;
+}
+
+label input {
+  background-color: transparent;
+  border-width: 0 0 3px 0;
+  border-bottom: 3px solid #000;
+  display: block;
+  margin: auto;
+  position: relative;
+  padding: 5px 5px 0 5px;
+  width: 250px;
+}
+
+input:focus, button:focus {
+  outline: none;
+}
+
+input::-webkit-input-placeholder {
+  transition: text-indent 250ms;
+}
+
+.test::-webkit-input-placeholder {
+  text-indent: -100%;
+}
+
+input[type="text"] {
+  font-size: 1.8rem;
+  font-family: 'Copse', serif;
+}
+
+form div {
+  text-align: center;
+}
+
+.title {
+  width: 140px;
+  margin: auto;
+  overflow: hidden;
+}
+
+form input[type="radio"] {
+  display: inline-block;
+  width: inherit;
+  height: 125px;
+}
+
+.hide {
+  transform: translateX(140px);
+  transition: transform 250ms, color 100ms;
+}
+
+form div:last-child {
+  margin-top: 20px;
+}
+
+button {
+  background: #FFF;
+  border-radius: 5px;
+  font-size: .8rem;
+  font-weight: 600;
+  border: 2px solid #555;
+  width: 120px;
+  padding: 10px;
+}
+
+.test2 {
+  transform: translateX(0);
+}
