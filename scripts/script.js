@@ -20,19 +20,21 @@ $(document).ready(function() {
   $('input[type="text"').on('focus', slider);
   
   $('input').keyup(function(){
-    console.log($(this).val());
     if($(this).val() !== '') {
-      $(this).prev().children().css('color','#0099cc');
+      $(this).prev().children().css('color','#66cc66');
     }
     else {
       $(this).prev().children().css('color','#ff6666');
     }
   });
   
-  $('').click(function() {
-    $(this).addClass('rotate');
-    $('.crop').addClass('rotate');
+  $('button').click(function() {
+    for(var i = 0; i < nameInputs.length; i++) {
+      if(nameInputs[i].value === ''){
+        $(nameInputs[i]).css('padding-left','0').addClass('test');
+        $(nameInputs[i]).prev().children().addClass('test2')
+      }
+    }
   });
   
 });
-

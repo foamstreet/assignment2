@@ -2,29 +2,60 @@
 <html>
 
   <head>
-    <script data-require="jquery@*" data-semver="3.0.0" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.js"></script>
+    <title>Stacy Mackin Assignment 2</title>
     <link href="https://fonts.googleapis.com/css?family=Copse" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <script data-require="jquery@*" data-semver="3.0.0" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.js"></script>
+    <script src="scripts/script.js"></script>
   </head>
 
   <body>
-    <form>
-      <div><label><div class="title"><p class="hide">First Name</p></div><input type="text" name="first" placeholder="First Name"></label></div>
-      <div><label><div div class="title"><p class="hide">Middle Name</p></div><input type="text" name="middle" placeholder="Middle Name"></label></div>
-      <div><label><div div class="title"><p class="hide">Last Name</p></div><input type="text" name="last" placeholder="Last Name"></label></div>
-      <div>
-        <label>
-          <div><p>How was your day?</p></div>
-          <input type="radio" name="day" value="good">
-          <div class="crop"><img src="https://media.giphy.com/media/Dkf37ayTUExQ4/giphy.gif" alt="happy dog"></div>
-          <input type="radio" name="day" value="medium">
-          <div class="crop"><img src="http://scontent.cdninstagram.com/t51.2885-15/s480x480/e35/13188133_712836702188702_717780512_n.jpg?ig_cache_key=MTI0MzEwMjAxNzgwMjAxODYwNg%3D%3D.2" alt="sleepy dog">
-          </div><input type="radio" name="day" value="bad"><div class="crop"><img src="http://1.bp.blogspot.com/-_cy8wp427xA/U24CjI1zkPI/AAAAAAAABlo/F5PgvkKuYz0/s1600/Animals+Looking+Freaking+Angry+16.gif" alt="crazy dog"></div>
+    <div class="container">
+      <form action="" method="post">
+        <label class="name-input">
+          <div class="title">
+            <p class="hide">First Name</p>
+          </div>
+          <input type="text" name="first" placeholder="First Name">
         </label>
-      </div>
-      <div><button type="submit">SUBMIT</button></div>
-    </form>
+        <label class="name-input">
+          <div div class="title">
+            <p class="hide">Middle Name</p>
+          </div>
+          <input type="text" name="middle" placeholder="Middle Name">
+        </label>
+        <label class="name-input">
+          <div div class="title">
+            <p class="hide">Last Name</p>
+          </div><input type="text" name="last" placeholder="Last Name">
+        </label>
+        <div>
+          <label>
+            <div>
+              <p>SELECT A CHARACTER</p>
+            </div>
+            <input type="radio" name="character" value="clown" checked="checked">
+            <!-- <div class="crop"> -->
+              <img src="imgs/clown.svg" alt="clown">
+            <!-- </div> -->
+            <input type="radio" name="character" value="cat">
+            <!-- <div class="crop"> -->
+              <img src="imgs/cat.svg" alt="cat">
+            <!-- </div> -->
+            <input type="radio" name="character" value="alien">
+            <!-- <div class="crop"> -->
+              <img src="imgs/alien-head.svg" alt="alien">
+            <!-- </div> -->
+          </label>
+        </div>
+        <div>
+          <button type="submit" onclick="return false">SUBMIT</button>
+        </div>
+      </form>
+      <footer>
+        <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+      </footer>
+    </div>
   </body>
 
 </html>

@@ -2,18 +2,32 @@ body {
   font-family: 'Copse', serif;
 }
 
+label {
+  display: inline-block;
+}
+
 label div {
   font-size: 1.3rem;
   text-align: center;
   overflow: hidden;
 }
 
+label + div {
+  margin-top: 40px;
+}
+
 label div.title p {
-    color: #ff6666;
+  color: #ff6666;
 }
 
 label img {
   height: 100px;
+  margin: 15px;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
 }
 
 .crop {
@@ -33,7 +47,7 @@ label img {
 label input {
   background-color: transparent;
   border-width: 0 0 3px 0;
-  border-bottom: 3px solid #000;
+  border-bottom: 2px solid #000;
   display: block;
   margin: auto;
   position: relative;
@@ -79,6 +93,15 @@ form input[type="radio"] {
   transition: transform 250ms, color 100ms;
 }
 
+.name-input {
+  width: 49.5%;
+}
+
+.name-input:last-of-type {
+  display: block;
+  margin: auto;
+}
+
 form div:last-child {
   margin-top: 20px;
 }
@@ -88,11 +111,27 @@ button {
   border-radius: 5px;
   font-size: .8rem;
   font-weight: 600;
+  position: relative;
   border: 2px solid #555;
   width: 120px;
   padding: 10px;
 }
 
+button:hover {
+  background: #000;
+  color: #FFF;
+}
+
 .test2 {
   transform: translateX(0);
+}
+
+footer {
+  margin-top: 6%;
+  text-align: center;
+}
+
+footer, footer a {
+  font-size: .3rem;
+  color: #CCC;
 }
