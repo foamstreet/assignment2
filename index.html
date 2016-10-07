@@ -1,61 +1,58 @@
 <!DOCTYPE html>
 <html>
-
   <head>
+    <meta charset="utf-8">
     <title>Stacy Mackin Assignment 2</title>
     <link href="https://fonts.googleapis.com/css?family=Copse" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" />
-    <script data-require="jquery@*" data-semver="3.0.0" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.js"></script>
-    <script src="scripts/script.js"></script>
   </head>
 
   <body>
-    <div class="container">
-      <form action="" method="post">
+    <header>
+      <h1>Please fill out the form below.</h1>
+    </header>
+
+    <form action="" method="post">
+      <fieldset>
         <label class="name-input">
           <div class="title">
-            <p class="hide">First Name</p>
+            <p class="hide-labels">First Name</p>
           </div>
           <input type="text" name="first" placeholder="First Name">
         </label>
         <label class="name-input">
           <div div class="title">
-            <p class="hide">Middle Name</p>
+            <p class="hide-labels">Middle Name</p>
           </div>
           <input type="text" name="middle" placeholder="Middle Name">
         </label>
         <label class="name-input">
           <div div class="title">
-            <p class="hide">Last Name</p>
+            <p class="hide-labels">Last Name</p>
           </div><input type="text" name="last" placeholder="Last Name">
         </label>
+      </fieldset>
+      <fieldset>
         <div>
-          <label>
-            <div>
-              <p>SELECT A CHARACTER</p>
-            </div>
-            <input type="radio" name="character" value="clown" checked="checked">
-            <!-- <div class="crop"> -->
-              <img src="imgs/clown.svg" alt="clown">
-            <!-- </div> -->
-            <input type="radio" name="character" value="cat">
-            <!-- <div class="crop"> -->
-              <img src="imgs/cat.svg" alt="cat">
-            <!-- </div> -->
-            <input type="radio" name="character" value="alien">
-            <!-- <div class="crop"> -->
-              <img src="imgs/alien-head.svg" alt="alien">
-            <!-- </div> -->
-          </label>
+          <h3>SELECT A CHARACTER</h3>
+          <label for="clown"><input id="clown" type="radio" name="character" value="clown" checked>
+          <img src="imgs/clown.svg" alt="clown"></label>
+          <label for="cat"><input id="cat" type="radio" name="character" value="cat">
+          <img src="imgs/cat.svg" alt="cat"></label>
+          <label for="alien"><input id="alien" type="radio" name="character" value="alien">
+          <img src="imgs/alien.svg" alt="alien"></label>
         </div>
         <div>
           <button type="submit" onclick="return false">SUBMIT</button>
         </div>
-      </form>
-      <footer>
-        <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-      </footer>
-    </div>
-  </body>
+      </fieldset>
+    </form>
 
+    <footer>
+      <p>Stacy Mackin &copy; 2016</p>
+      <p>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></p>
+    </footer>
+    <script data-require="jquery@*" data-semver="3.0.0" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.js"></script>
+    <script src="scripts/script.js"></script>
+  </body>
 </html>
